@@ -1,0 +1,82 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".NewActivity"
+    android:background="@drawable/border_shape">
+
+    <ImageView
+        android:id="@+id/image_pizza"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_launcher_foreground" />
+
+    <!-- Nom de la Pizza -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:fontFamily="cursive"
+            android:text="Nom: " />
+        <TextView
+            android:id="@+id/nom_pizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            />
+    </LinearLayout>
+
+    <!-- Description de la Pizza -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:fontFamily="cursive"
+            android:text="Description: " />
+        <TextView
+            android:id="@+id/description_pizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333" />
+    </LinearLayout>
+
+    <!-- Préparation de la Pizza -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            android:fontFamily="cursive"
+            android:text="Préparation: " />
+        <TextView
+            android:id="@+id/preparation_pizza"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#333333" />
+    </LinearLayout>
+</LinearLayout>
